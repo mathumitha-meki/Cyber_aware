@@ -1,0 +1,159 @@
+{% extends 'layout.html'%}
+{% load static %}
+
+{% block content %}
+<body class="section1">
+    <header>  
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid fixed-top bg-dark" style="margin-left: 0; margin-right: 0; padding-left: 10rem;">
+            <a class="navbar-brand" href="layout">CyberAware</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse py-4" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="padding-left: 5rem;">
+                  <a class="nav-link ml-5" href="layout">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ml-5" href="login">LOGIN</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="aware" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      AWAREOF
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Social Engineering</a></li>
+                      <li><a class="dropdown-item" href="#">Data Breach</a></li>
+                      <li><a class="dropdown-item" href="#">Information Security</li>
+                      <li><a class="dropdown-item" href="#">Cyber Security</a></li>
+                      <li><a class="dropdown-item" href="#">Stay Safe Online</a></li>
+                      <li><a class="dropdown-item" href="#">Cyber Laws of India</a></li>
+                      <li><a class="dropdown-item" href="#">Cybercrime</a></li>
+                      <li><a class="dropdown-item" href="#">Fight against Cybercrime</a></li>  
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ml-5" href="ques">QUESTIONARIES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ml-5" href="quiz">QUIZ</a>
+                </li>
+            </div>
+          </nav>
+    </header>
+  <div class="back" style="background-image: url('{% static 'image/back1.jpg' %}'); background-repeat: no-repeat; background-size: 550%">
+    <div class="section" style="margin-left: 4.5rem; margin-top: 6.2rem; padding-bottom: 3rem;" >
+      <div class="card ml-5 mt-4 mb-3 shadow" style=" width: 70rem; margin-left: 15px;" >
+        <div class="divider" style="background-color:rgb(136, 152, 204);">
+        <h5 class="card-title text-center mt-2" style="font-weight: bolder; font-size: 25px;">QUESTIONARIES</h5>
+        <p class="lead ml-5 mr-5" style="text-decoration-color: black; font-size:x-large; text-align:justify;">Cyber aware questionnaire are useful for us to create a better cyber safe environment.All the data you are entering here are completely safe and confidential and we assure your privacy.This questionnaire data is really useful for us for further development of our movements and next plans to create a cyber safe environment.Do not hassle to enter your data.Its completely safe and confidential</p>
+        </div>
+        <hr class="featurette-divider" style="list-style: bold;">
+        <div class="card-body">
+          <form action="ques" method="post">
+            {%csrf_token%}
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">1. Name</label>
+            <input type="Name" required class="form-control" id="exampleFormControlInput1" placeholder="name" name="name">
+          </div></br>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">2. Email address</label>
+            <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+          </div></br>
+          <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">3. Gender</label><br>
+                 <input type="radio" id="html" name="Gender" value="MALE">
+                 <label for="html">Male</label>
+                 <input type="radio" id="css" name="Gender" value="FEMALE">
+                 <label for="css">Female</label>
+                 <input type="radio" id="javascript" name="Gender" value="OTHER">
+                 <label for="javascript">Other</label>      
+          </div></br> 
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">4. Qualification</label>
+            <input type="College" required class="form-control" id="exampleFormControlInput1" placeholder="Type your school or college name" name="Qualification">
+          </div></br>
+          <div>
+            <P class="para">5.Can you able to identify a phising email or sms?</P>
+                  <input type="radio" id="YES" name="phising" value="YES">
+                  <label for="YES">YES</label>
+                  <input type="radio" id="NO" name="phising" value="NO">
+                  <label for="NO">NO</label>
+          </div></br>
+          <div>
+            <p class="para">6.What are the steps you do if your phone got hacked?</p>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="hack" rows="3"></textarea>
+          </div></br>
+          <div>
+            <p class="para">7.Do you use firewall software on your computer?</p>
+              <input type="radio" id="YES" name="firewall" value="YES">
+              <label for="YES">YES</label>
+              <input type="radio" id="NO" name="firewall" value="NO">
+              <label for="NO">NO</label>
+              <input type="radio" id="Don't Know" name="firewall" value="Don't Know">
+              <label for="Don't Know">Don't Know</label>
+          </div></br>
+          <div>
+            <p class="para">8.Do you know Cyber laws of India?</p>
+              <input type="radio" id="YES" name="laws" value="YES">
+              <label for="YES">YES</label>
+              <input type="radio" id="NO" name="laws" value="NO">
+              <label for="NO">NO</label>
+              <input type="radio" id="Not that much" name="laws" value="Not that much">
+              <label for="Not that much">Not that much</label>
+          </div></br>
+          <div class="para">
+            <p class="para">9.What would you do if anyone publishes your private Images without consent or knowlege?</p>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="publish" rows="3"></textarea>
+          </div></br>
+          <div>
+            <p class="para">10.Have you ever been Cyberbullied?</p>
+              <input type="radio" id="YES" name="cyberbulied" value="YES">
+              <label for="YES">YES</label>
+              <input type="radio" id="NO" name="cyberbulied" value="NO">
+              <label for="NO">NO</label>
+              <input type="radio" id="Not sure" name="cyberbulied" value="Not sure">
+              <label for="Not sure">Not sure</label>
+          </div></br>
+          <div>
+            <P class="para">11.If you have been cyber stalking or cyberbullied, did you report it to anyone?</P>
+                  <input type="radio" id="YES" name="stalking" value="YES">
+                  <label for="YES">YES</label>
+                  <input type="radio" id="NO" name="stalking" value="NO">
+                  <label for="NO">NO</label>
+            <p class="para">If you reported it, to whom did you report it</p>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="report">    
+          </div></br>
+          <div>
+            <p class="para">12.If you didn't report it, and were cyberbulied or cyberstalked, why didn't you report it?(if this doesn't apply, type "DNA")</p>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="DNA" rows="3"></textarea>
+          </div></br>
+          <div>
+            <p class="para">13.How often do you think cyberbullying or cyberstalking happens?</p>
+              <input type="radio" id="YES" name="happen" value="It happens all the time">
+              <label for="YES">It happens all the time</label></br>
+              <input type="radio" id="NO" name="happen" value="It happens to often, but not all the time">
+              <label for="NO">It happens to often, but not all the time</label></br>
+              <input type="radio" id="Not sure" name="happen" value="It happens sometimes">
+              <label for="Not sure">It happens sometimes</label></br>
+              <input type="radio" id="Not sure" name="happen" value="It never happens">
+              <label for="Not sure">It never happens</label>
+          </div></br>
+
+          <div>
+            <p class="para">14.What do you want grown-ups to know about CyberAware that they don't know?We Welcome your ideas?</p>
+            <textarea class="form-control" required id="exampleFormControlTextarea1" name="idea" rows="3"></textarea>
+          </div></br>
+
+          <div>
+            <h6 class="refer text-center">Report complaints related to cyber crime at National Cyber Crime Reporting Portal <a href="https://cybercrime.gov.in">(https://cybercrime.gov.in)</a> of MHA(Ministry of Home Affairs)</h6>
+          </div></br>
+          <button type="submit" required class="btn btn-primary btns"  style="height:2.5rem; width: 6rem; text-align: center; margin-left: 30rem; padding-bottom: 16px; font-size: larger;">Submit</button>
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>  
+</body>
+{% endblock content %}

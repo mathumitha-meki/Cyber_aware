@@ -1,0 +1,80 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+.nav {
+    left:0;
+    right: 0;
+}
+.navbar .navbar-brand{
+    font-weight: normal;
+    font-size: 30px;
+    color:#fff;
+}
+
+.navbar .navbar-nav .nav-link{
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-inline-start: 50px;
+    padding: 0;
+    text-transform: uppercase;
+    transition: all-ease-in o.4s;
+    color:#fff;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background: transparent;
+    color: #fff;
+}    
+.navbar .navbar-nav .nav-link:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;  
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+    background: #fff;
+    color: #fff;
+}
+#home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.section_cor{
+    margin-top: 5rem;
+}
+.carousel-item {
+    height: 32rem;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    
+     
+}
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.row {
+    margin-left: 5px;
+}
+.btns {
+    background: linear-gradient( #9cecfb, #65c7f7, #0052d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

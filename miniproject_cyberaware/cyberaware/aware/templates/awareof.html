@@ -1,0 +1,383 @@
+{% extends 'layout.html'%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+{% block content %}
+
+
+<body class="section1">
+  <header>
+    <div class="nav"> 
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid py-3 fixed-top bg-dark">
+        <a class="navbar-brand mr-3" href="layout">CyberAware</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link ml-5" href="layout">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-5" href="login">LOGIN</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="aware" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  AWAREOF
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Social Engineering</a></li>
+                  <li><a class="dropdown-item" href="#">Data Breach</a></li>
+                  <li><a class="dropdown-item" href="#">Information Security</li>
+                  <li><a class="dropdown-item" href="#">Cyber Security</a></li>
+                  <li><a class="dropdown-item" href="#">Stay Safe Online</a></li>
+                  <li><a class="dropdown-item" href="#">Cyber Laws of India</a></li>
+                  <li><a class="dropdown-item" href="#">Cybercrime</a></li>
+                  <li><a class="dropdown-item" href="#">Fight against Cybercrime</a></li>  
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-5" href="ques">QUESTIONARIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-5" href="quiz">QUIZ</a>
+            </li>
+        </div>
+      </nav>
+    </div>      
+  </header>
+
+  <div class="section_cor container-fluid " style="margin-top: 7rem;">
+
+    <div id="myCarousel" class="carousel slide " data-ride="carousel">
+      <ol class="carousel-indicators"> 
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" ></li>
+        <li data-target="#myCarousel" data-slide-to="2" ></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" style="background-image:url('{% static 'image/img5.jpg' %}');">
+          <div class="overlay-image"></div>
+          <div class="container mr-4 mt-4 text-center" style="padding-left: 150px; padding-top: 100px;">
+          <h1>Information Security</h1>
+          <p class="para2" style="text-align: center;" >Information Security is not only about securing information from
+            unauthorized access. Information Security is basically the practice of
+            preventing unauthorized access, use, disclosure, disruption,
+            modification, inspection, recording or destruction of information.
+            Information can be physical or electronic one. Information can be
+            anything like Your details or we can say your profile on social media,
+            your data in mobile phone, your biometrics etc. Thus Information
+            Security spans so many research areas like Cryptography, Mobile
+            Computing, Cyber Forensics, Online Social Media etc...</p>
+          <a href="#" class="btn btn-lg btn-primary btns">Read More</a>
+          </div> 
+        </div>
+    
+        <div class="carousel-item" style="background-image:url('{% static 'image/swape1.jpg' %}');">
+          <div class="overlay-image"></div>
+          <div class="container mr-4 mt-4 text-center" style="padding-left: 150px; padding-top: 100px;">
+          <h1>Cyber Security</h1>
+          <p>Cyber security is the practice of defending computers, servers, mobile
+            devices, electronic systems, networks, and data from malicious attacks.
+            It's also known as information technology security or electronic
+            information security. The term applies in a variety of contexts, from
+            business to mobile computing, and can be divided into a few common
+            categories..</p>
+          <a href="#" class="btn btn-lg btn-primary btns">Read More</a>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image:url('{% static 'image/car4.jpg' %}');">
+          <div class="overlay-image"></div>
+          <div class="container mr-4 mt-4 text-center" style="padding-left: 150px; padding-top: 100px;">
+          <h1>Cybercrime</h1>
+          <p class="para2" style="text-align:center">We all must remember that Cyberspace is a common heritage of
+            ours which we have inherited in our life times from the benefits of
+            ever growing technologies. This Cyberspace is the lifeline of the
+            entire universe and given its irreversible position today, it is the
+            duty of every netizen to contribute toward making the said
+            cyberspace free of any trouble or cybercrime. To rephrase the
+            famous words of Rabindra Nath Tagore in today's context, "Where
+            the Cyberspace is without fear or crime and the head is held high,
+            where knowledge is free, where tireless striving stretches its arms
+            towards perfection, into that cyber heaven of freedom, O my father,
+            let our humanity awake."...</p>
+          <a href="#" class="btn btn-lg btn-primary btns">Read More</a>
+          </div>
+        </div>
+
+        
+
+      </div>
+      <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+        <span class="sr-only">Previous</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>  
+      
+         
+      
+  </div>
+
+
+
+  <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" ">Social Engineering</h2>
+        <p class="lead" style="text-align: justify;"">Broadly speaking, social engineering is the practice of manipulating
+          people into giving up sensitive information. Social engineering attacks
+          can happen in person, such as a burglar who dresses up as a delivery
+          man to get buzzed into a building. This article will instead focus on social
+          engineering cyber attacks. In most cases these attacks aim to get the
+          victim to divulge either login credentials or sensitive financial information.
+        <p class="lead" style="text-align: justify;">● An attacker sending an email to a victim which appears to come
+          from someone in the victim’s contact list. This email can contain a
+          suspicious link that will execute a malicious cross-site scripting
+          attack, or direct the victim to a malicious site.</p>
+        <p class="lead" style="text-align: justify;"> ● An attacker baits users online with links that claim to be downloads
+          of popular movies or software, but these downloads actually
+          contain a malicious payload.</p>
+        <p class="lead" style="text-align: justify;"> ● An attacker contacts a victim claiming to be a wealthy foreigner
+          who needs US bank account information to transfer their fortune,
+          offering to reward the victim handsomely in exchange for their
+          bank account information. In reality, the attacker is out to drain the
+          victim’s accounts</p>
+      </div>
+      <div class="col-md-5">
+        <img src= "{% static 'image/socialeng.jpg' %}"  style="margin-top: 17px;  height:90%; width:90%; padding-top: 30px;"  alt="social engineering"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2" style="padding-top: 20px; padding-right: 45px; ">
+        <h2 class="featurette-heading text-center">Data Breach </h2>
+        <p class="lead" style="text-align: justify;">●A data breach is the release of confidential, private, or otherwise
+          sensitive information into an unsecured environment.</p> 
+        <p class="lead" style="text-align: justify;">●A data breach can occur accidentally, or as the result of a deliberate attack.</p>
+        <p class="lead" style="text-align: justify;">●Millions of people are affected by data breaches every year, and they
+          can range in scope from a doctor accidentally looking at the wrong
+          patient’s chart, to a large-scale attempt to access government computers
+          to uncover sensitive information..</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="padding-top: 20px; height: 19rem;" width="500" height="500" src="{% static 'image/databreach.jpg' %}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading text-center">Information Security</h2>
+        <p class="lead" style="text-align: justify;">Information Security is not only about securing information from
+          unauthorized access. Information Security is basically the practice of
+          preventing unauthorized access, use, disclosure, disruption,
+          modification, inspection, recording or destruction of information.
+          Information can be physical or electronic one. Information can be
+          anything like Your details or we can say your profile on social media,
+          your data in mobile phone, your biometrics etc. Thus Information
+          Security spans so many research areas like Cryptography, Mobile
+          Computing, Cyber Forensics, Online Social Media etc.
+          Information Security programs are build around 3 objectives, commonly
+          known as CIA – Confidentiality, Integrity, Availability.</p>
+          <p class="lead" style="text-align: justify;">1. Confidentiality – means information is not disclosed to
+          unauthorized individuals, entities and process. For example if we
+          say I have a password for my Gmail account but someone saw
+          while I was doing a login into Gmail account. In that case my
+          password has been compromised and Confidentiality has been
+          breached.</p>
+          <p class="lead" style="text-align: justify;">2. Integrity – means maintaining accuracy and completeness of
+          data. This means data cannot be edited in an unauthorized way.
+          For example if an employee leaves an organisation then in that
+          case data for that employee in all departments like accounts,
+          should be updated to reflect status to JOB LEFT so that data is
+          complete and accurate and in addition to this only authorized
+          person should be allowed to edit employee data.</p>
+          <p class="lead" style="text-align: justify;">3. Availability – means information must be available when needed.
+          For example if one needs to access information of a particular
+          employee to check whether employee has outstanded the number
+          of leaves, in that case it requires collaboration from different
+          organizational teams like network operations, development
+          operations, incident response and policy/change management.
+          Denial of service attack is one of the factor that can hamper the
+          availability of information..</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 53rem; margin-top: 3rem;" width="500" height="500" src="{% static 'image/inf.jpg' %}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect></img>
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2" style="padding-top: 20px; padding-right: 45px;">
+        <h2 class="featurette-heading text-center">Cyber security </h2>
+        <p class="lead" style="text-align: justify;">Cyber security is the practice of defending computers, servers, mobile
+          devices, electronic systems, networks, and data from malicious attacks.
+          It's also known as information technology security or electronic
+          information security. The term applies in a variety of contexts, from
+          business to mobile computing, and can be divided into a few common
+          categories.</p>
+          <p class="lead" style="text-align: justify;">● Network security is the practice of securing a computer network
+          from intruders, whether targeted attackers or opportunistic malware. </p>
+          <p class="lead" style="text-align: justify;">● Application security focuses on keeping software and devices free
+          of threats. A compromised application could provide access to the data
+          its designed to protect. Successful security begins in the design stage,
+          well before a program or device is deployed. </p>
+          <p class="lead" style="text-align: justify;">● Information security protects the integrity and privacy of data, both
+          in storage and in transit. </p>
+          <p class="lead" style="text-align: justify;">● Operational security includes the processes and decisions for
+          handling and protecting data assets. The permissions users have when
+          accessing a network and the procedures that determine how and where
+          data may be stored or shared all fall under this umbrella.</p>
+          <p class="lead" style="text-align: justify;">● End-user education addresses the most unpredictable
+          cyber-security factor: people. Anyone can accidentally introduce a virus
+          to an otherwise secure system by failing to follow good security
+          practices. Teaching users to delete suspicious email attachments, not
+          plug in unidentified USB drives, and various other important lessons is
+          vital for the security of any organization.</p>
+        
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="margin-top: 43px;" width="500" height="500" src="{% static 'image/cyse.jpg' %}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading text-center">How to Stay Safe</h2>
+        <p class="lead" style="text-align: justify;">1. Stranger Danger
+          Remember the old saying “Stranger Danger”? Just as you wouldn’t talk
+          to, share photos with or give out personal information to a stranger on
+          the street, the same applies online. You never know who is really typing
+          those messages, however convincing they may seem! Always tell a
+          parent or teacher straight away if messages or images you see or
+          receive online make you feel uncomfortable</p>
+          <p class="lead" style="text-align: justify;">2. Check your privacy settings
+            It’s easy to set up a social media account, but make sure you take your
+            time to choose the highest privacy settings. Or, go back now and check
+            them! Google yourself and see what information and images come up in
+            the results – this is your ‘digital footprint’. You may be surprised and find
+            your profiles and photos aren’t as hidden as you thought.</p>
+          <p class="lead" style="text-align: justify;">3. Remember, posting is permanent
+            Many people think that deleting something online means removing it
+            from the internet forever. Sadly, that’s not true. After posting something
+            online, anyone can save, download and re-use it! Think twice before
+            posting something you may regret later – remember employers often
+            check social profiles when hiring. Posting something in the heat of the
+            moment or an inappropriate photo can make or break your future. Just
+            think about all the recent scandals around the uncovering of old,
+            inappropriate tweets by a host of now infamous YouTubers!</p>
+          <p class="lead" style="text-align: justify;">4. Create strong passwords
+            When it comes to passwords, your birthday just won’t cut it! Keeping
+            your accounts safe online starts with choosing secure passwords with a
+            mix of symbols, numbers and capital letters. Never share your
+            passwords with anyone, even friends.</p>
+          <p class="lead" style="text-align: justify;">5. Never reveal personal information
+            Anyone that knows you well, will never need to ask for personal
+            information like your address or school online. Never give out this
+            information and be wary of who is asking for it – always tell a parent or
+            teacher.</p>
+          <p class="lead" style="text-align: justify;">6. Be aware of fake news
+              Fake news has been on everyone’s lips during the past year or so.
+              Normally, if something sounds too good to be true, it is! If you were
+              wondering, understanding how to stay safe online doesn’t stop with
+              social media. It’s also about picking up on spam emails. Never open
+              links or attachments from an unknown sender, they could unleash a virus
+              on your computer. And never pass on personal information, such as
+              online banking details, when requested by email – your bank or other
+              trusted organisations will never ask for this over email.</p>  
+      </div>
+      <div class="col-md-5">
+        <img class="img-5" style="margin-top: 40px; height: 70rem;"width="500" height="1010" src="{% static 'image/safety.jpg' %}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2" style="padding-top: 20px; padding-right: 45px;">
+        <h2 class="featurette-heading text-center">Cyber Laws of India </h2></n>
+        <p class="lead" style="text-align: justify;">●Section 65 – Tampering with computer Source Documents
+          A person who intentionally conceals, destroys or alters any computer
+          source code (such as programmes, computer commands, design and
+          layout), when it is required to be maintained by law commits an offence
+          and can be punished with 3 years’ imprisonment or a fine of 2 Lakhs INR
+          or both</p></n>
+          <p class="lead" style="text-align: justify;">●Section 66 - Using password of another person
+            If a person fraudulently uses the password, digital signature or other
+            unique identification of another person, he/she can face imprisonment up
+            to 3 years or/and a fine of 1 Lakh INR.</p></n>
+          <p class="lead" style="text-align: justify;">●Section 66D - Cheating Using computer resource
+            If a person cheats someone using a computer resource or a
+            communication device, he/she could face imprisonment up to 3 years
+            or/and fine up to 1 Lakh INR</p></n>
+          <p class="lead" style="text-align: justify;">●Section 66E - Publishing private Images of Others
+            If a person captures, transmits or publishes images of a person’s private
+            parts without his/her consent or knowledge, the person is entitled to
+            imprisonment up to 3 years of fine up to 2 Lakhs INR or both</p></n>
+          <p class="lead" style="text-align: justify;">●Section 66F - Acts of cyber Terrorism
+            A person can face life imprisonment if he/she denies an authorized
+            person the access to the computer resource or attempts to
+            penetrate/access a computer resource without authorization, with an aim
+            to threaten the unity, integrity, security or sovereignty of the nation. This
+            is a non-bailable offence.</p></n>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-6" style="padding-top: 20px;"width="500" height="750" src="{% static 'image/law.jpg' %}" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="30%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading text-center">Cybercrime</h2>
+        <p class="lead" style="text-align: justify;">When Internet was developed, the founding fathers of Internet hardly
+          had any inclination that Internet could also be misused for criminal
+          activities. Today, there are many disturbing things happening in
+          cyberspace. Cybercrime refers to all the activities done with criminal
+          intent in cyberspace. These could be either the criminal activities in the
+          conventional sense or could be activities, newly evolved with the growth
+          of the new medium. Because of the anonymous nature of the Internet, it
+          is possible to engage into a variety of criminal activities with impunity
+          and people with intelligence, have been grossly misusing this aspect of
+          the Internet to perpetuate criminal activities in cyberspace. The field of
+          Cybercrime is just emerging and new forms of criminal activities in
+          cyberspace are coming to the forefront with the passing of each new
+          day.</p>
+        
+      </div>
+      <div class="col-md-5">
+        <img class="img-1" style="height:90%; width:90%; padding-top: 10px;" src="{% static 'image/crime.jpg' %}" alt="social engineering"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>  
+
+
+    
+
+</body>
+
+{% endblock content %}
